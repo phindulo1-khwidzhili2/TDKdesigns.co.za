@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en-ZA">
+<head>
+<meta charset="utf-8">
+<script>
+/* This page uses addresses that start at the site root, so it works on the web server when it is
+   shown for a wrong address at any depth. When the file is opened straight from a folder those
+   addresses do not exist, so point them back at this folder. */
+if (location.protocol === "file:") {
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll('[href^="/"], [src^="/"]').forEach(function (el) {
+      var attr = el.hasAttribute("href") ? "href" : "src";
+      var fixed = el.getAttribute(attr).slice(1);
+      if (el.tagName === "SCRIPT") {
+        var s = document.createElement("script"); s.src = fixed; document.body.appendChild(s);
+      } else {
+        el.setAttribute(attr, fixed);
+      }
+    });
+  });
+}
+</script>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found | TDK Designs and Branding Solutions</title>
+<meta name="description" content="This page does not exist. Go back to the TDK Designs home page.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TDK Designs &amp; Branding Solutions">
+<meta property="og:title" content="Page not found | TDK Designs and Branding Solutions">
+<meta property="og:description" content="This page does not exist. Go back to the TDK Designs home page.">
+<meta name="theme-color" content="#f16122">
+<link rel="icon" href="/assets/img/brand/favicon.svg" type="image/svg+xml">
+<link rel="preload" href="/assets/fonts/archivo-variable.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/assets/css/site.css">
+<script>if("IntersectionObserver" in window)document.documentElement.classList.add("js")</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header on-dark">
+  <div class="wrap site-header__in">
+    <a class="brand" href="/index.html" aria-label="TDK Designs and Branding Solutions home">
+      <img src="/assets/img/brand/tdk-designs-logo-white.png" width="1209" height="514" alt="TDK Designs &amp; Branding Solutions">
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle__bars" aria-hidden="true"></span>Menu
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Main">
+      <ul><li><a href="/index.html">Home</a></li><li><a href="/about.html">About</a></li><li><a href="/services.html">Services</a></li><li><a href="/work.html">Our work</a></li><li><a href="/contact.html">Contact</a></li></ul>
+      <a class="btn btn--primary" href="/contact.html#quote">Get a quote</a>
+    </nav>
+  </div>
+  <span class="progress" aria-hidden="true"></span>
+</header>
+<main id="main">
+<section class="lost">
+  <div class="wrap">
+    <h1>This page does not exist.</h1>
+    <p class="lead">The link may be old, or the address may have been typed wrong. These will get you back on track.</p>
+    <div class="btn-row">
+      <a class="btn btn--primary" href="/index.html">Go to the home page</a>
+      <a class="btn btn--outline" href="/work.html">See our work</a>
+      <a class="btn btn--outline" href="/contact.html">Contact us</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer class="site-footer on-dark">
+  <span class="colourbar" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span>
+  <div class="wrap site-footer__in">
+    <div class="site-footer__brand">
+      <img src="/assets/img/brand/tdk-designs-logo-white.png" width="1209" height="514" alt="TDK Designs &amp; Branding Solutions" loading="lazy">
+      <p>Graphic design, printing and branding in Louis Trichardt, Limpopo. A one-stop shop for design and print.</p>
+      <div class="social">
+        <a href="https://web.facebook.com/thinah.mudimeli" target="_blank" rel="noopener" aria-label="TDK Designs on Facebook"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 8.5V7a1.5 1.5 0 0 1 1.5-1.5H17V2.5h-2.5a4 4 0 0 0-4 4v2H8v3h2.5v10H14v-10h2.5l.5-3z"/></svg></a>
+        <a href="https://www.instagram.com/tdkdesigns92" target="_blank" rel="noopener" aria-label="TDK Designs on Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3.5" y="3.5" width="17" height="17" rx="4.5"/><circle cx="12" cy="12" r="4"/><path d="M17.2 6.8h.01"/></svg></a>
+      </div>
+    </div>
+    <nav aria-label="Services">
+      <h2>Services</h2>
+      <ul><li><a href="/posters.html">Graphic design</a></li><li><a href="/printing.html">Printing</a></li><li><a href="/signboards-branding.html">Signage</a></li><li><a href="/vehicle-branding.html">Vehicle branding</a></li><li><a href="/cloth-print.html">Clothing printing</a></li><li><a href="/services.html">All services</a></li></ul>
+    </nav>
+    <nav aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about.html">About us</a></li>
+        <li><a href="/work.html">Our work</a></li>
+        <li><a href="/contact.html">Contact us</a></li>
+      </ul>
+    </nav>
+    <div>
+      <h2>Contact</h2>
+      <ul>
+        <li><a href="tel:+27713736835">071 373 6835</a></li>
+        <li><a href="mailto:info@tdkdesigns.co.za">info@tdkdesigns.co.za</a></li>
+        <li>Louis Trichardt, Limpopo, South Africa</li>
+        <li>Monday to Friday, 09:00 to 17:00</li>
+      </ul>
+    </div>
+  </div>
+  <div class="wrap site-footer__base">
+    <p>© <span data-year>2026</span> TDK Designs &amp; Branding Solutions. All rights reserved.</p>
+    <p>Website by <a href="https://thilisadiki.dev" target="_blank" rel="noopener">Thili Sadiki</a></p>
+  </div>
+</footer>
+<script src="/assets/js/site.js" defer></script>
+</body>
+</html>
